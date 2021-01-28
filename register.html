@@ -27,11 +27,6 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <title>Registration Form</title>
-  <style>
-    input[type="checkbox"]:disabled {
-  color: lightskyblue;
-}
-    </style>
 </head>
 
 <body>
@@ -50,13 +45,13 @@
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="index.html#intro">Home</a></li>
+          <li ><a href="index.html#intro">Home</a></li>
           <li><a href="index.html#about">About</a></li>
           <li><a href="index.html#speakers">Speakers</a></li>
           <li><a href="index.html#schedule">Schedule</a></li>
           <li><a href="index.html#faq">FAQ</a></li>
           <li><a href="index.html#contact">Contact</a></li>
-          <li><a href="register.html">Registration</a></li>
+          <li class="menu-active"><a href="register.html">Registration</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -72,16 +67,16 @@
 	<form class="container my-3" onsubmit="fetch();return false;">
 		<div class="form-group">
 			<label for="name">Name of team Leader</label>
-      <input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name" /> 
+      <input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name" required/> 
     </div>
 		<div class="form-group">
 			<label for="email">Email address of team Leader</label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" /> 
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"  required/> 
     </div>
     <div class="form-row">
       
         <label for="course">Team Name</label>
-        <input class="form-control" placeholder="Enter course" id="team" /> 
+        <input class="form-control" placeholder="Enter Team Name" id="team" /> 
       <!-- <div class="form-group col-md-6">
       <label for="branch">Event</label>
       <input  class="form-control" placeholder="Enter Branch" id="event" /> 
@@ -108,7 +103,12 @@
           </label>
           <span class="c-indicator"></span>
         </div>
-       
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check4" class="form-check-input"  checked="checked" 
+            disabled>Webinars
+          </label>
+        </div>
         <div class="form-check-inline">
           <label class="form-check-label">
             <input type="checkbox" id="check5" class="form-check-input" value="">Workshops by Industry Experts
@@ -129,38 +129,37 @@
             <input type="checkbox" id="check8" class="form-check-input" value="">GSoC Mentorship Series
           </label>
         </div>
-        <div class="form-check-inline">
-          <label class="form-check-label">
-            <input type="checkbox" id="check4" class="form-check-input"  checked="checked" 
-            disabled>Webinars
-          </label>
         </div>
-        </div>
+
+        <div class="form group col-md-12">
+          <b>Note :</b> It is mandatory for all the team members to regsiter in all the webinars. Your team will be awarded 10 points per person for
+         attending a webinar.The registration links are provided along with their respective speakers.
+          </div>
       </div>
     <div class="form-row">
 		<div class="form-group col-md-6">
 			<label for="course">Course</label>
-      <input class="form-control" placeholder="Enter course" id="course" /> 
+      <input class="form-control" placeholder="Enter course" id="course"  required/> 
     </div>
     <div class="form-group col-md-6">
     <label for="branch">Branch</label>
-    <input  class="form-control" placeholder="Enter Branch" id="branch" /> 
+    <input  class="form-control" placeholder="Enter Branch" id="branch" required/> 
     </div>
     </div>
     <div class="form-row">
 		<div class="form-group col-md-6">
 			<label for="country">College</label>
-      <input class="form-control " placeholder="Enter College" id="college" /> 
+      <input class="form-control " placeholder="Enter College" id="college"  required/> 
     </div>
 		<div class="form-group col-md-6">
 			<label for="state">Country</label>
-      <input class="form-control " placeholder="Enter country" id="country" /> 
+      <input class="form-control " placeholder="Enter country" id="country"  required/> 
     </div>
   </div>
   <div class="form-row">
 		<div class="form-group col-md-6">
 			<label for="country">Contact Number</label>
-      <input class="form-control " placeholder="Enter Number" id="Number" /> 
+      <input class="form-control " placeholder="Enter Number" id="Number"  required/> 
     </div>
 		<div class="form-group col-md-6">
 			<label for="state">Number of team members</label>
@@ -170,29 +169,29 @@
   <div class="form-row">
 		<div class="form-group col-md-4">
 			<label for="country">Team member 1</label>
-      <input class="form-control " placeholder="Enter Name" id="member1" /> 
+      <input class="form-control " placeholder="Enter Name" id="member1"  required/> 
     </div>
 		<div class="form-group col-md-4">
 			<label for="state">Contact Number</label>
-      <input class="form-control " placeholder="Enter Number" id="Number1" /> 
+      <input class="form-control " placeholder="Enter Number" id="Number1"  required/> 
     </div>
     <div class="form-group col-md-4">
 			<label for="state">Email Id</label>
-      <input class="form-control " placeholder="Enter Email ID" id="email1" /> 
+      <input class="form-control " placeholder="Enter Email ID" id="email1"  required/> 
     </div>
   </div>
   <div class="form-row">
 		<div class="form-group col-md-4">
 			<label for="country">Team member 2</label>
-      <input class="form-control " placeholder="Enter Name" id="member2" /> 
+      <input class="form-control " placeholder="Enter Name" id="member2"  required/> 
     </div>
 		<div class="form-group col-md-4">
 			<label for="state">Contact Number</label>
-      <input class="form-control " placeholder="Enter Number" id="Number2" /> 
+      <input class="form-control " placeholder="Enter Number" id="Number2"  required/> 
     </div>
     <div class="form-group col-md-4">
 			<label for="state">Email Id</label>
-      <input class="form-control " placeholder="Enter Email ID" id="email2" /> 
+      <input class="form-control " placeholder="Enter Email ID" id="email2"  required/> 
     </div>
   </div>
   <div class="form-row">

@@ -109,7 +109,7 @@
     });
     if(tname!=""&&team!="")
     {
-    var x=tname+" your  team "+team+" has been registered";
+    var x=tname+" your team "+team+" has been registered";
     alert(x);
 }
 }
