@@ -739,6 +739,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers .speaker .details a {
   color: #fff;
+  padding-right: 10px;
 }
 
 #speakers .speaker .details a:hover {
