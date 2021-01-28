@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <!-- Favicons -->
+  <link href="img/icon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+	<title>Registration Form</title>
+</head>
+
+<body>
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header" style="background-color: rgba(6, 12, 34, 0.98);height: 70px;">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <!-- Uncomment below if you prefer to use a text logo -->
+        <!-- <h1><a href="#main">C<span>o</span>nf</a></h1>-->
+        <a href="index.html#intro" class="scrollto"><img src="img/icon.png" alt="" title=""></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html#intro">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#speakers">Speakers</a></li>
+          <li><a href="index.html#schedule">Schedule</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="register.html">Registration</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+ <div style="margin-top: 80px;"></div>
+
+ <div class="section-header">
+  <h2>Registration Form</h2>
+</div>
+
+
+	<form class="container my-3" onsubmit="fetch();return false;">
+		<div class="form-group">
+			<label for="name">Name of team Leader</label>
+      <input type="name" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter name" /> 
+    </div>
+		<div class="form-group">
+			<label for="email">Email address of team Leader</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" /> 
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="course">Team Name</label>
+        <input class="form-control" placeholder="Enter course" id="team" /> 
+      </div>
+      <div class="form-group col-md-6">
+      <label for="branch">Event</label>
+      <input  class="form-control" placeholder="Enter Branch" id="event" /> 
+      </div>
+      </div>
+    <div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="course">Course</label>
+      <input class="form-control" placeholder="Enter course" id="course" /> 
+    </div>
+    <div class="form-group col-md-6">
+    <label for="branch">Branch</label>
+    <input  class="form-control" placeholder="Enter Branch" id="branch" /> 
+    </div>
+    </div>
+    <div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="country">College</label>
+      <input class="form-control " placeholder="Enter College" id="college" /> 
+    </div>
+		<div class="form-group col-md-6">
+			<label for="state">Country</label>
+      <input class="form-control " placeholder="Enter country" id="country" /> 
+    </div>
+  </div>
+  <div class="form-row">
+		<div class="form-group col-md-6">
+			<label for="country">Contact Number</label>
+      <input class="form-control " placeholder="Enter Number" id="Number" /> 
+    </div>
+		<div class="form-group col-md-6">
+			<label for="state">Number of team members</label>
+      <input class="form-control " placeholder="Enter no. team members" id="teammembers" /> 
+    </div>
+  </div>
+  <div class="form-row">
+		<div class="form-group col-md-4">
+			<label for="country">Team member 1</label>
+      <input class="form-control " placeholder="Enter Name" id="member1" /> 
+    </div>
+		<div class="form-group col-md-4">
+			<label for="state">Contact Number</label>
+      <input class="form-control " placeholder="Enter Number" id="Number1" /> 
+    </div>
+    <div class="form-group col-md-4">
+			<label for="state">Email Id</label>
+      <input class="form-control " placeholder="Enter Email ID" id="email1" /> 
+    </div>
+  </div>
+  <div class="form-row">
+		<div class="form-group col-md-4">
+			<label for="country">Team member 2</label>
+      <input class="form-control " placeholder="Enter Name" id="member2" /> 
+    </div>
+		<div class="form-group col-md-4">
+			<label for="state">Contact Number</label>
+      <input class="form-control " placeholder="Enter Number" id="Number2" /> 
+    </div>
+    <div class="form-group col-md-4">
+			<label for="state">Email Id</label>
+      <input class="form-control " placeholder="Enter Email ID" id="email2" /> 
+    </div>
+  </div>
+  <div class="form-row">
+		<div class="form-group col-md-4">
+			<label for="country">Team member 3</label>
+      <input class="form-control " placeholder="Enter Name" id="member3" /> 
+    </div>
+		<div class="form-group col-md-4">
+			<label for="state">Contact Number</label>
+      <input class="form-control " placeholder="Enter Number" id="Number3" /> 
+    </div>
+    <div class="form-group col-md-4">
+			<label for="state">Email Id</label>
+      <input class="form-control " placeholder="Enter Email ID" id="email3" /> 
+    </div>
+  </div>
+  <div class="form-row">
+		<div class="form-group col-md-4">
+			<label for="country">Team member 4</label>
+      <input class="form-control " placeholder="Enter Name" id="member4" /> 
+    </div>
+		<div class="form-group col-md-4">
+			<label for="state">Contact Number</label>
+      <input class="form-control " placeholder="Enter Number" id="Number4" /> 
+    </div>
+    <div class="form-group col-md-4">
+			<label for="state">Email Id</label>
+      <input class="form-control " placeholder="Enter Email ID" id="email4" /> 
+    </div>
+  </div>
+		<button type="submit" class="btn btn-primary" style="margin-left: 40%;border-radius: 0%;">Complete Registration</button>
+  </form>
+  
+    <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright 2021 All Rights Reserved. | <strong>SDS BIT MESRA</strong>. 
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+
+    
+  </footer><!-- #footer -->
+
+
+<script src="contactform/registration.js"></script>
+</body>
+
+</html>
