@@ -12,13 +12,13 @@
   firebase.analytics();
 
   var key,tname,team,event1,email,course,branch,college,country,tNumber,teammembers,member1,Number1,email1,member2,Number2,email2,member3,Number3,email3,member4,Number4,email4;
+  var check1,check2,check3,check4,check5,check6,check7,check8;
 
   function ready()
   {
       tname=document.getElementById("name").value;
       email=document.getElementById("email").value;
       team=document.getElementById("team").value;
-      event1=document.getElementById("event").value;
       course=document.getElementById("course").value;
       branch=document.getElementById("branch").value;
       college=document.getElementById("college").value;
@@ -37,9 +37,48 @@
       member4=document.getElementById("member4").value;
       Number4=document.getElementById("Number4").value;
       email4=document.getElementById("email4").value;
+      check1=document.getElementById("check1");
+      check2=document.getElementById("check2");
+      check3=document.getElementById("check3");
+      check4=document.getElementById("check4");
+      check5=document.getElementById("check5");
+      check6=document.getElementById("check6");
+      check7=document.getElementById("check7");
+      check8=document.getElementById("check8");
+      event1="Webinars ";
+      if(check1.checked == true)
+      {
+        event1=event1+" Bussiness Case Study Challenge";
+      }
+      if(check2.checked == true)
+      {
+        event1=event1+" Data Analytics Challenge";
+      }
+      if(check3.checked == true)
+      {
+        event1=event1+" Data Science Hackathon";
+      }
+      if(check5.checked == true)
+      {
+        event1=event1+" Workshops by Industry Experts";
+      }
+      if(check6.checked == true)
+      {
+        event1=event1+" Data Dig";
+      }
+      if(check7.checked == true)
+      {
+        event1=event1+" Data Visualization Quizzes";
+      }
+      if(check8.checked == true)
+      {
+        event1=event1+" GSoC Mentorship Series";
+      }
       key=team+" "+tname;
 
-      console.log(key,tname,email,team,event1,course,branch,college,country,tNumber,teammembers,member1,Number1,email1,member2,Number2,email2,member3,Number3,email3,member4,Number4,email4);
+      console.log(event1);
+
+      console.log(key,tname,email,team,course,branch,college,country,tNumber,teammembers,member1,Number1,email1,member2,Number2,email2,member3,Number3,email3,member4,Number4,email4);
   }
 
   function fetch(){
@@ -68,7 +107,9 @@
         number4: Number4,
         email4: email4 
     });
-
+    if(tname!=""&&team!="")
+    {
     var x=tname+" your  team "+team+" has been registered";
     alert(x);
+}
 }

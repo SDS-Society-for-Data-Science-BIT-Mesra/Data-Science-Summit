@@ -26,7 +26,12 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-	<title>Registration Form</title>
+  <title>Registration Form</title>
+  <style>
+    input[type="checkbox"]:disabled {
+  color: lightskyblue;
+}
+    </style>
 </head>
 
 <body>
@@ -74,14 +79,63 @@
       <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" /> 
     </div>
     <div class="form-row">
-      <div class="form-group col-md-6">
+      
         <label for="course">Team Name</label>
         <input class="form-control" placeholder="Enter course" id="team" /> 
-      </div>
-      <div class="form-group col-md-6">
+      <!-- <div class="form-group col-md-6">
       <label for="branch">Event</label>
       <input  class="form-control" placeholder="Enter Branch" id="event" /> 
+      </div> -->
       </div>
+      <div class="form-row" style="margin-top: 15px;margin-bottom: 15px;">
+        <div class="form-group col-md-3">
+          Events you want to register
+        </div>
+        <div class="form-group col-md-9">
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check1" class="form-check-input" value="">Bussiness Case Study Challenge
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check2" class="form-check-input" value="">Data Analytics Challenge
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check3" class="form-check-input" value="">Data Science Hackathon
+          </label>
+          <span class="c-indicator"></span>
+        </div>
+       
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check5" class="form-check-input" value="">Workshops by Industry Experts
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check6" class="form-check-input" value="">Data Dig
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check7" class="form-check-input" value="">Data Visualization Quizzes
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check8" class="form-check-input" value="">GSoC Mentorship Series
+          </label>
+        </div>
+        <div class="form-check-inline">
+          <label class="form-check-label">
+            <input type="checkbox" id="check4" class="form-check-input"  checked="checked" 
+            disabled>Webinars
+          </label>
+        </div>
+        </div>
       </div>
     <div class="form-row">
 		<div class="form-group col-md-6">
