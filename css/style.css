@@ -689,9 +689,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
   color: #fff;
+}
+
+#about .small-text {
+  font-size: xx-small;
 }
 
 #about .register-btn {
