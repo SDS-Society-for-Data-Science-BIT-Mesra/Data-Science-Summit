@@ -111,5 +111,6 @@
     {
     var x=tname+" your team "+team+" has been registered";
     alert(x);
+    window.location = "https://dare2compete.com/f/data-science-summit21-birla-institute-of-technology-bit-mesra-ranchi-9352";
 }
 }
