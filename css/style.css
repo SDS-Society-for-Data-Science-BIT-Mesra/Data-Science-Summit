@@ -689,8 +689,34 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
+  color: #fff;
+}
+
+#about .small-text {
+  font-size: xx-small;
+}
+
+#about .register-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f82249;
+}
+
+#about .register-btn:hover {
+  background: #f82249;
   color: #fff;
 }
 
@@ -712,7 +738,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: rgba(6, 12, 34, 0.76);
   position: absolute;
   left: 0;
-  bottom: -30px;
+  bottom: -123px;
+  height: 220px;
   right: 0;
   text-align: center;
   padding-top: 10px;
@@ -744,6 +771,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #speakers .speaker .details a:hover {
   color: #f82249;
+}
+
+#speakers .speaker .details .register .register-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f82249;
+}
+
+#speakers .speaker .details .register .register-btn:hover {
+  background: #f82249;
+  color: #fff;
 }
 
 #speakers .speaker:hover .details {
