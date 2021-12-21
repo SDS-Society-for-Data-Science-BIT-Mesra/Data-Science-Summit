@@ -354,6 +354,23 @@ h6 {
   margin: 0;
 }
 
+.nav-menu .btn-main {
+  background-color: #f82249;
+  color: #fff;
+  border-radius: 25px;
+}
+
+.nav-menu .btn-main:hover:before,
+.nav-menu li:hover>.btn-main:before,
+.nav-menu .menu-active>.btn-main:before {
+  visibility: hidden;
+}
+
+.nav-menu .btn-main:hover {
+  background-color: #c70226;
+  color: #fff;
+}
+
 /* Mobile Nav Toggle */
 
 #mobile-nav-toggle {
