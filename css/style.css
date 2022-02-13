@@ -479,6 +479,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
+.btn-red{
+  width:20%;
+  height:10%
+}
+
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
@@ -736,7 +741,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #f82249;
   color: #fff;
 }
+#schedule .register-btn {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: rgb(240, 36, 36);
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #f82249;
+}
 
+
+#schedule .register-btn:hover {
+  background: #f82249;
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # Speakers Section
 --------------------------------------------------------------*/
